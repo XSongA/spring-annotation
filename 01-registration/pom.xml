@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>registration</artifactId>
+    <artifactId>01-registration</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
