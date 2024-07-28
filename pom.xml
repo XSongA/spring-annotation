@@ -9,7 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>01-registration</module>
+        <module>registration</module>
+        <module>lifecycle</module>
     </modules>
 
     <properties>
