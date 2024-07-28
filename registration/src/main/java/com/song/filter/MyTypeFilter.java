@@ -10,16 +10,20 @@ import org.springframework.core.type.filter.TypeFilter;
 import java.io.IOException;
 
 public class MyTypeFilter implements TypeFilter {
+    /**
+     * @param metadataReader        读取到的当前正在扫描的类的信息
+     * @param metadataReaderFactory 可以获取到其他任何类信息的工厂
+     */
     @Override
     public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory) throws IOException {
-        // 获取当前类的注解信息
+        // 获取当前正在扫描的类的注解信息
         AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
-        // 获取当前类的信息
+        // 获取当前正在扫描的类的信息
         ClassMetadata classMetadata = metadataReader.getClassMetadata();
-        // 获取当前类的资源信息
+        // 获取当前正在扫描的类的资源信息（类的路径）
         Resource resource = metadataReader.getResource();
         String className = classMetadata.getClassName();
-        System.out.println("className:" + className);
+        System.out.println("className: " + className);
         return className.contains("er");
     }
 }

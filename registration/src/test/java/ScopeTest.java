@@ -1,5 +1,3 @@
-package com.song.test;
-
 import com.song.config.PersonConfig;
 import com.song.entity.Person;
 import org.springframework.context.ApplicationContext;
