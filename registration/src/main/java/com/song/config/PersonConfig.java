@@ -64,7 +64,7 @@ public class PersonConfig {
 //    @Lazy
 //    @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public Person person() {
-//        System.out.println("创建 Person 对象……");
+//        System.out.println("创建 Person 对象...");
         return new Person("ls", 20);
     }
 

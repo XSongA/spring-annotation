@@ -19,13 +19,13 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
         boolean definition = registry.containsBeanDefinition("com.song.entity.Red");
         boolean definition2 = registry.containsBeanDefinition("com.song.entity.Blue");
         if (definition && definition2) {
-            System.out.println("contains red and blue……");
+            System.out.println("contains red and blue...");
             // 指定 Bean 的定义信息（类型、Scope……）
             RootBeanDefinition beanDefinition = new RootBeanDefinition(RainBow.class);
             // 指定 Bean 的名称注册
             registry.registerBeanDefinition("rainBow", beanDefinition);
         } else {
-            System.out.println("no contain red and blue……");
+            System.out.println("no contain red and blue...");
         }
     }
 }
