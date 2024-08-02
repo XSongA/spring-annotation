@@ -11,6 +11,8 @@
     <modules>
         <module>registration</module>
         <module>lifecycle</module>
+        <module>attributeassignment</module>
+        <module>autowired</module>
     </modules>
 
     <properties>
@@ -42,6 +44,14 @@
             <version>5.10.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
 
     </dependencies>
 

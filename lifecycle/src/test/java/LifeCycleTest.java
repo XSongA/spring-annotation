@@ -5,6 +5,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class LifeCycleTest {
     @Test
+    public void testBeanPostProcessor() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class);
+        System.out.println("容器创建完成……");
+        context.close();
+    }
+
+    @Test
     public void testInitAndDestroy() {
         // 1、创建 ioc容器
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class);
@@ -12,8 +19,12 @@ public class LifeCycleTest {
 //        for (String name : context.getBeanDefinitionNames()) {
 //            System.out.println(name);
 //        }
+//        context.getBean("car");
+//        context.getBean("cat");
 
         // 关闭容器
         context.close();
     }
+
+
 }
