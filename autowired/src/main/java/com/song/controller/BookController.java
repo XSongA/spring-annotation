@@ -10,8 +10,4 @@ import javax.annotation.Resource;
 public class BookController {
     @Autowired
     private BookService bookService;
-
-    public void print() {
-        System.out.println(bookService);
-    }
 }
