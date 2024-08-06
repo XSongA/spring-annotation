@@ -13,7 +13,10 @@ import org.springframework.context.annotation.Primary;
  * 自动装配：
  */
 @Configuration
-@ComponentScan({"com.song.controller", "com.song.service", "com.song.repository"})
+@ComponentScan({"com.song.controller",
+        "com.song.service",
+        "com.song.repository",
+        "com.song.entity"})
 public class MainConfig {
     @Primary
     @Bean("bookDAO2")
