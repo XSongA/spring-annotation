@@ -13,6 +13,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AutowiredTest {
 
     @Test
+    public void test04() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
+        System.out.println("容器创建完成……");
+        System.out.println(context);
+    }
+
+    @Test
     public void test03() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
         System.out.println("容器创建完成……");

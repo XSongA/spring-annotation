@@ -26,7 +26,7 @@ public class Boss {
     // 唯一的有参构造器，参数的 @Autowired 可以省略
     public Boss(Car car) {
         this.car = car;
-        System.out.println("Boss car arg constructor...");
+//        System.out.println("Boss car arg constructor...");
     }
 
 
